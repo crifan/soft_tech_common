@@ -1,0 +1,503 @@
+<?xml version='1.0' encoding="utf-8"?>
+
+<!DOCTYPE chapter
+[
+
+<!ENTITY % crl_ent PUBLIC "crl.ent" 'http://www.crifan.com/files/res/docbook/entity/crl.ent'>
+%crl_ent;
+
+]>
+<chapter
+    xmlns="http://docbook.org/ns/docbook"
+    xmlns:xl="http://www.w3.org/1999/xlink"
+    xmlns:xi="http://www.w3.org/2001/XInclude"
+    xmlns:mathml="http://www.w3.org/1998/Math/MathML"
+    xmlns:xhtml="http://www.w3.org/1999/xhtml"
+    xmlns:svg="http://www.w3.org/2000/svg"
+
+    xml:id="ch01_common_item">
+<title>通用软件开发之技术点</title>
+<abstract></abstract>
+
+<para></para>
+<para>此处整理一些，软件开发期间，会遇到的一些通用的技术概念或名词。</para>
+
+<sect1 xml:id="host_and_dev"><title>主机Host和设备Device</title>
+    <para>很多技术的框架都是有Host和Device（Controller）</para>
+    <para>比如：</para>
+	<itemizedlist>
+		<listitem>蓝牙
+			<para>蓝牙技术中，也有主机端Host和设备Device端，的概念。其中蓝牙中将设备端，有时候也叫做Controller端，指的是设备控制器，设备端。</para>
+			<para>详见：<link xl:href="http://www.crifan.com/files/doc/docbook/bluetooth_intro/release/html/bluetooth_intro.html">蓝牙协议详解</link></para>
+		</listitem>
+		<listitem>USB
+			<para>USB协议中，也有主机端和设备端的概念。</para>
+			<para>详见：<link xl:href="http://www.crifan.com/files/doc/docbook/usb_basic/release/html/usb_basic.html#core_is_host">USB基础知识概论 - USB系统的核心是Host</link></para>
+			<para></para>
+		</listitem>
+	</itemizedlist>
+</sect1>
+
+<sect1 xml:id="profile"><title>profile</title>
+    <para>profile，作为英文单词，本意是：侧面；轮廓；外形；剖面；简况</para>
+    <para>而在软件技术领域内profile的的含义，可以翻译为：</para>
+    <para>不同的协议层次，档次，应用领域划分，对应不同的协议和规范</para>
+    <para>再白话点说就是：（某种技术）根据应用领域不同，而专门划分出来的一部分协议或规范的总和</para>
+    <para>比如：</para>
+	<itemizedlist>
+		<listitem>DVB中的profile
+			<para>卫星通讯，DVB，方面也有相关不同profile的划分</para>
+			<para>DVB，根据应用领域不同，可以分为：</para>
+			<itemizedlist>
+				<listitem>DVB-S：S指的是Satellite，卫星。用于卫星领域的DVB技术</listitem>
+				<listitem>DVB-T：T指的是Terrestrial television，用于地面无线广播中的DVB技术</listitem>
+				<listitem>DVB-C：C指的是Cable，用于有线领域的DVB技术</listitem>
+			</itemizedlist>
+		</listitem>
+		<listitem>PROFINET中的profile
+			<para>PROFINET也是有多个profile的协议：</para>
+			<itemizedlist>
+				<listitem>PROFINET ：用于编码器方面的</listitem>
+				<listitem>PROFIdrive：用于运动控制的</listitem>
+				<listitem>PROFIsafe：用于功能安全领域</listitem>
+				<listitem>PROFIenergy：用于能源需求领域</listitem>
+				<listitem>用于火车领域</listitem>
+			</itemizedlist>
+			<para>详见：<link xl:href="http://www.crifan.com/summary_filedbus_profinet_overview/">【整理】现场总线技术：PROFINET | 在路上</link></para>
+		</listitem>
+		<listitem>蓝牙中的profile
+			<para>蓝牙协议中的profile的概念更明显：</para>
+			<para>蓝牙中，根据应用领域不同，针对不同领域，定制了很多profile，相当于子协议。</para>
+			<para>相关的子协议，非常多。具体的解释参见协议的详细介绍：</para>
+			<para>详见：<link xl:href="http://www.crifan.com/files/doc/docbook/bluetooth_intro/release/html/bluetooth_intro.html">蓝牙协议详解</link></para>
+		</listitem>
+	</itemizedlist>
+</sect1>
+
+<sect1 xml:id="portfolio"><title>portfolio产品组合</title>
+    <para>在软件开发期间，涉及到软硬件产品时，常常会听说到一个词：portfolio</para>
+    <para>其英文原意是：n. 公文包；文件夹；证券投资组合；部长职务</para>
+    <para>而实际上此处的含义，更接近于：产品组合，产品线，一系列的产品，产品家族</para>
+    <para></para>
+    <para>此处列举很多例子来解释其含义，如下：</para>
+	<itemizedlist>
+		<listitem>i.MX portfolio
+			<para><link xl:href="http://www.crifan.com/zt_freescale39s_imx_and_micrium39s_c__os-ii/">[ZT]Freescale’s i.MX and Micrium’s μC/OS-II | 在路上</link></para>
+			<para>中的：</para>
+			<para>The i.MX portfolio is a central feature of Freescale&quot;s i.Smart smartphone reference design, providing power performance to our Innovative Convergence platforms.</para>
+		</listitem>
+		<listitem>ACS portfolio
+			<para><link xl:href="http://www.crifan.com/new_english_words_v2011-10-31/">New English Words v2011-10-31 | 在路上</link></para>
+			<para>中的：</para>
+			<para>XXX discussed the four key growth technologies pervasive across the ACS portfolio.</para>
+		</listitem>
+		<listitem>SPI NOR portfolio
+			<para><link xl:href="http://www.micron.com/products/nor-flash/serial-nor-flash">Micron Technology, Inc. - Serial NOR Flash</link></para>
+			<para>中的：</para>
+			<para>The broadest SPI NOR portfolio in the market</para>
+		</listitem>
+		<listitem>Micron Flash Portfolio
+			<para><link xl:href="www.micron.com/~/media/Documents/Products/Product%20Flyer/NOR_NAND_Flash_Guide_lo.pdf">Micron Technology, Inc. - Serial NOR Flash</link></para>
+			<para>中的：</para>
+			<para>Micron Flash Portfolio</para>
+			<para>Micron has one of the broadest portfolios of NOR and NAND Flash solutions in the industry. </para>
+			<para>We have products that are tailored to meet your application requirements, including a strong product offering for automotive applications, which require more reliability than others.</para>
+			<para></para>
+		</listitem>
+	</itemizedlist>
+</sect1>
+
+<sect1 xml:id="high_speed"><title>HS=High Speed=高速</title>
+	<para>HS==High Speed==高速（传输速率）</para>
+	<para>有些技术，涉及到传输速度的话，会提到高速，High Speed。</para>
+	<para>比如USB 2.0的HS，Bluetooth 3.0+HS。</para>
+	<para>高速的高，是相对而言的，是相对于更低一些的速度来说的：</para>
+	<itemizedlist>
+		<listitem>USB的HS
+			<para>USB 2.0的HS是480Mb/s，是相对于USB 1.1的Low Speed（1.5Mbs/s）和Full Speed（12Mb/s）而言更高一些。</para>
+			<para>不过后来的USB 3.0的Super Speed（5.0Gb/s），则是比HS更高。</para>
+		</listitem>
+		<listitem>蓝牙的HS
+			<para>之前版本的蓝牙的速度就相对较低，而后来的标准Bluetooth 3.0，支持更高的速度，所以就叫做HS，意思是更高的速度，高速了。</para>
+		</listitem>
+	</itemizedlist>
+	<para></para>
+</sect1>
+
+<sect1 xml:id="technical_notes"><title>技术说明Technical Notes</title>
+	<para>很多设备或产品的手册中，都会出现一个：Technical Notes，中文暂翻译为技术说明</para>
+	<para>此技术说明的主要作用是：针对此处涉及的技术，尤其是产品相关的技术，如何使用，如何将其应用到产品，需要哪些注意事项，等等这方面的内容，都专门写个说明，让技术的使用者更快的上手使用。</para>
+	<para>比如：</para>
+	<itemizedlist>
+		<listitem>DataLogic的扫描枪的手册中就有Technical Notes
+            <figure xml:id="fg.datalogic_doc_technical_notes"><title>DataLogic扫描枪手册中的Technical Notes</title>
+                <mediaobject>
+                    <imageobject role="html"><imagedata fileref="images/datalogic_doc_technical_notes.jpg" align="left"   scalefit="0" width="100%"/></imageobject>
+                    <imageobject role="fo">  <imagedata fileref="images/datalogic_doc_technical_notes.jpg" align="center" scalefit="0" width="100%"/></imageobject>
+                </mediaobject>
+            </figure>
+		</listitem>
+	</itemizedlist>
+	<para></para>
+</sect1>
+
+<sect1 xml:id="image"><title>Image==镜像==镜像文件</title>
+	<para>在计算机领域，包括计算机软件的应用和开发，都可能会遇到Image这个词汇。</para>
+	<para>Image，本意是：图像，影像。</para>
+	<para>在计算机领域内，往往指的是，对应的一个文件，该文件包含了相关的软件的二进制文件。</para>
+	<para>而相关的软件，往往指的是：操作系统。</para>
+	<para>而操作系统，有的指的是普通的桌面级的，比如Win7，也有的指的是嵌入式领域内的，比如嵌入式Linux</para>
+	<para>所以，你可能会看到这样的说法：</para>
+	<itemizedlist>
+		<listitem>给我个Win7镜像，我拿去刻盘
+			<para>此处的镜像Image，指的是就是：</para>
+			<para>对于微软开发的Win7这个桌面操作系统来说，往往都是对应的.iso文件</para>
+			<para>是可以刻录到光盘（或者启动U盘中模拟出来的光盘CDROM）中。</para>
+			<para>然后用词光盘，就可以启动笔记本电脑，然后按照正常的操作步骤去安装Win7这个操作系统了。</para>
+			<para>即：</para>
+			<para>桌面级操作系统的（往往是ISO的，可刻录用于启动和安装系统的）镜像文件</para>
+		</listitem>
+		<listitem>通过其他把Linux的image烧录到板子上去
+			<para>此处的image，就是指的是：</para>
+			<para>在嵌入式Linux系统开发过程中，已经把Linux源码编译成为Linux的二进制文件了。</para>
+			<para>-&gt;这个二进制文件，就是对应某嵌入式开发板的真正运行时候所需要去运行的嵌入式Linux系统。</para>
+			<para>-&gt;即嵌入式版本的Linux镜像文件。</para>
+		</listitem>
+	</itemizedlist>
+	<para></para>
+</sect1>
+
+<sect1 xml:id="pre_requisite_co_requisites"><title>pre-requisite前提条件和辅助条件co-requisites</title>
+	<para>除了前提条件，还有个词是：辅助条件</para>
+	<para>co-requisites是辅助条件的意思。</para>
+	<para>在写教程解释说明某东西之前,往往有个pre-requisite</para>
+	<para>prerequisite，表示前提条件：表示你要学习下面将要介绍的内容之前，本身需要掌握何种背景知识，相关基础知识，才能看得懂。</para>
+	<para>举个最简单的例子：</para>
+	<para>要是你的小学老师在叫你数学中的乘法之前，你还没学过加减法的话，那自然很难，无法学会乘法</para>
+	<para>此时，在老师教你乘法之前，就需要你掌握，加减法，这个背景的基础知识。</para>
+	<para>也就叫做：</para>
+	<para>在学习乘法之前，要先有前提条件：已经学会掌握了加减法。加减法，就是乘法的前提条件。</para>
+	<para></para>
+</sect1>
+
+<sect1 xml:id="protocol_stack"><title>协议栈</title>
+	<para>协议栈往往指的是：</para>
+	<para>相对于普通的某个技术的单个的协议而言，是一个协议的集合</para>
+	<para>就像计算机领域内的<emphasis>栈</emphasis>的概念一样</para>
+	<para>是有层次划分的，是多个协议一点一点地堆起来的</para>
+	<para>其中的单个的协议，设计的初衷就是用于该协议栈的某一层</para>
+	<para>比如：</para>
+	<itemizedlist>
+		<listitem>TCP/IP协议栈
+			<para>是最典型的代表</para>
+			<para></para>
+			<para></para>
+		</listitem>
+		<listitem>USB的协议栈
+			<para>USB也有协议栈</para>
+			<para>详见：<link xl:href="http://www.crifan.com/files/doc/docbook/soft_tech_common/release/html/soft_tech_common.html#ch03_protocol_overview">USB协议概览</link></para>
+			<para></para>
+		</listitem>
+		<listitem>蓝牙也有协议栈
+			<para>虽然各种协议主要是依据profile被划分成不同应用领域的，但是也是分层次的，所以也叫做蓝牙的协议栈</para>
+			<para>详见：<link xl:href="http://www.crifan.com/files/doc/docbook/bluetooth_intro/release/html/bluetooth_intro.html#ch02_bt_arch_profile">蓝牙协议的架构</link></para>
+			<para></para>
+		</listitem>
+	</itemizedlist>
+	<para></para>
+</sect1>
+
+<sect1 xml:id="domain_protocol_analysis_tool"><title>协议分析工具</title>
+    <para>很多技术，协议都有专门的协议分析工具，便于开发调试</para>
+    <para>比如：</para>
+    <itemizedlist>
+        <listitem>USB协议分析工具
+            <para>有很多个USB协议分析工具，包括国内公司做的，和国外公司做的。</para>
+            <para>TODO：详见：</para>
+            <para><link xl:href="http://crifan.com/files/doc/docbook/usb_basic/release/html/usb_basic.html#usb_analysis_tool">其他一些USB测试和协议分析等软件</link></para>
+        </listitem>
+        <listitem>蓝牙协议分析工具
+            <para>在：</para>
+            <para><link xl:href="http://www.deyisupport.com/question_answer/wireless_connectivity/bluetooth/f/103/t/53706.aspx">CC2541发送超长字节内容的处理方式？（500~1000字节） - 蓝牙Bluetooth 技术 - 德州仪器在线技术支持社区</link></para>
+            <para>中看到的：</para>
+            <figure xml:id="fg.bluetooth_protocol_analysis_tool_screenshot"><title>蓝牙协议分析工具截图示例</title>
+                <mediaobject>
+                    <imageobject role="html"><imagedata fileref="images/bluetooth_protocol_analysis_tool_screenshot.jpg" align="left"   scalefit="0" width="100%"/></imageobject>
+                    <imageobject role="fo">  <imagedata fileref="images/bluetooth_protocol_analysis_tool_screenshot.jpg" align="center" scalefit="1" width="100%"/></imageobject>
+                </mediaobject>
+            </figure>
+            <para></para>
+        </listitem>
+        <listitem>HART的协议分析工具：FrameAlyst
+            <para>TODO：详见<link xl:href="http://www.crifan.com/try_hart_protocol_debug_tool_framealyst/">【记录】下载试用HART协议分析工具FrameAlyst</link></para>
+            <para></para>
+        </listitem>
+        <listitem>网络协议分析工具WireShark（旧称Ethereal）
+            <para>TODO：详见<link xl:href="http://www.crifan.com/try_with_wireshark/">【记录】折腾WireShark（旧称Ethereal）</link></para>
+            <para></para>
+        </listitem>
+    </itemizedlist>
+    <para></para>
+    <para>此处之所以整理各种不同的协议都有专用分析工具的意思是：</para>
+    <para>不论做哪方面的技术和协议，一般来说，都是有对应的专用工具的。</para>
+    <para>在折腾对应的技术的时候，找到对应专用工具，并合理利用，可以大幅度地提供做事情的效果：</para>
+    <para>对于抓取出来的某协议的数据，无需手动地极其费力去分析，并且人工也很难分析，而改用工具分析数据，立马就so easy的节奏。</para>
+</sect1>
+
+<sect1 xml:id="uuid"><title>UUID通用唯一识别码</title>
+	<para>UUID==Universally Unique IDentifier</para>
+	<para>主要用来标示，某种系统或环，中的唯一性</para>
+	<para></para>
+	<itemizedlist>
+		<listitem>PROFINET中的UUID
+			<para><link xl:href="http://www.rtaautomation.com/technologies/profinet-cba/">PROFINET CBA Protocol Overview</link></para>
+			<para>中就有解释到PROFINET中也用到UUID</para>
+			<para></para>
+			<para></para>
+		</listitem>
+		<listitem>Linux系统中磁盘分区时也涉及到UUID
+			<para></para>
+			<para></para>
+		</listitem>
+	</itemizedlist>
+	<para></para>
+</sect1>
+
+<sect1 xml:id="brochure"><title>Brochure宣传手册</title>
+	<para>作为某种技术来说，官网去宣传该技术，往往都是制作一个技术类的宣传手册，往往叫做：Brochure</para>
+	<para>比如：</para>
+	<para></para>
+	<itemizedlist>
+		<listitem>HART的Brochure
+			<para><link xl:href="http://en.hartcomm.org/">HART Communication Protocol and Foundation - Home Page</link></para>
+			<para>中的：</para>
+			<para><link xl:href="http://www.hcf-files.com/webasyst/published/DD/2.0/file_link.php?sl=b1f501197481c80f429a61cb87c45ec1&amp;DB_KEY=V0VCRklMRVM=">HART Communication Protocol (brochure, PDF)</link></para>
+			<para>就是个PDF文件：HART_Protocol_Brochure.pdf</para>
+			<para>就是对应的用于宣传HART技术的Brochure</para>
+		</listitem>
+	</itemizedlist>
+	<para></para>
+</sect1>
+
+<sect1 xml:id="cheat_sheet"><title>cheat sheet</title>
+	<para>cheat sheet，本意是，小抄</para>
+	<para>不过在技术领域内，其含义是：</para>
+	<para>用一个小抄的形式，去简明介绍某个技术</para>
+	<para>往往表现形式都是一个简明扼要的，图片，图表，等方式，去整理出某个技术的核心的东西。</para>
+	<para>以便可以起到，想要学习使用某个技术，带上这个，小抄，随时可以方便的“抄写”，查看到自己所需要某个点的用法。</para>
+	<itemizedlist>
+		<listitem>vim的cheat sheet
+			<para>vim中最核心的就是各个快捷键及其含义</para>
+			<para>所以就有人去以键盘的方式，去整理出vim中有哪些快捷键，及其对应含义：</para>
+			<para><link xl:href="http://www.love67.net/?p=711">What a wonderful world ! - Coding~</link></para>
+			<para>中的vim的cheat sheet：</para>
+            <figure xml:id="fg.cheat_sheet_vim"><title>Vim的cheat sheet</title>
+                <mediaobject>
+                    <imageobject role="html"><imagedata fileref="images/cheat_sheet_vim.jpg" align="left"   scalefit="0" width="100%"/></imageobject>
+                    <imageobject role="fo">  <imagedata fileref="images/cheat_sheet_vim.jpg" align="center" scalefit="1" width="100%"/></imageobject>
+                </mediaobject>
+            </figure>
+		</listitem>
+		<listitem>git的cheat sheet
+			<para><link xl:href="http://www.git-tower.com/blog/git-cheat-sheet/">Git Cheat Sheet</link></para>
+			<para>中的git的cheat sheet：</para>
+            <figure xml:id="fg.cheat_sheet_git"><title>Git的cheat sheet</title>
+                <mediaobject>
+                    <imageobject role="html"><imagedata fileref="images/cheat_sheet_git.png" align="left"   scalefit="0" width="100%"/></imageobject>
+                    <imageobject role="fo">  <imagedata fileref="images/cheat_sheet_git.png" align="center" scalefit="1" width="100%"/></imageobject>
+                </mediaobject>
+            </figure>
+			<para>不过，另外也看到了，好像cheat sheet只是表示总结摘要，所以也可以有其他形式，比如网页：</para>
+			<para><link xl:href="https://github.com/flyhigher139/Git-Cheat-Sheet/blob/master/Git%20Cheat%20Sheet-Zh.md">Git Cheat Sheet-Zh.md at master GitHub</link></para>
+		</listitem>
+		<listitem>HTML5的cheat sheet
+			<para><link xl:href="http://www.smashingmagazine.com/2009/07/06/html-5-cheat-sheet-pdf/">HTML 5 Cheat Sheet (PDF) – Smashing Magazine</link></para>
+			<para>中的HTML5的cheat sheet：</para>
+            <figure xml:id="fg.cheat_sheet_html5"><title>HTML5的cheat sheet</title>
+                <mediaobject>
+                    <imageobject role="html"><imagedata fileref="images/cheat_sheet_html5.png" align="left"   scalefit="0" width="100%"/></imageobject>
+                    <imageobject role="fo">  <imagedata fileref="images/cheat_sheet_html5.png" align="center" scalefit="1" width="100%"/></imageobject>
+                </mediaobject>
+            </figure>
+		</listitem>
+	</itemizedlist>
+	<para></para>
+</sect1>
+
+<sect1 xml:id="retro_spec"><title>retro-spec先有实现后有标准</title>
+	<para>计算机领域内的技术，尤其是软件，协议等东西，正常的普通的逻辑是：</para>
+	<para>先有人（或组织）设计了某个技术的标准，然后再有众多人去实现了这个标准，将技术应用到某个现实领域内。</para>
+	<para>不过现实往往有些特例：</para>
+	<para>开始某种技术的应用，并没有统一的标准，此时是百花齐放，但是也是诸侯混战，没有统一。</para>
+	<para>最后，由各方出面，大家达成共识，统一采用某个标准。</para>
+	<para>比如，HTML就是这样一个先有了实现后才由标准的retro-spec，详见：<link xl:href="http://www.zhihu.com/question/19818208">HTML4，HTML5，XHTML 之间有什么区别？</link></para>
+	<para></para>
+</sect1>
+
+<sect1 xml:id="international_standard"><title>国际标准IEC</title>
+	<para>国际标准，尤其是IEC，是工业领域方面的国际标准。</para>
+	<para>每个IEC标准，对应的是IEC加上编号，对应的是某个协议，标准等等。</para>
+	<para>比如：<link xl:href="http://www.io-link.com/en/Technology/what_is_IO-Link.php?thisID=73">IO-Link im Durchblick</link>中的IO-Link</para>
+	<para>IO-Link是工业领域用的一种协议，对应的IEC中的标准是：IEC 61131-9 </para>
+	<para>类比来解释就是：</para>
+	<para>IEC 61131-9  就像一个学生的学号；</para>
+	<para>学号背后，对应的是某个真实存在的，具有名字的学生：IO-Link，就像该学生的名字。</para>
+</sect1>
+
+<sect1 xml:id="common_lib_diff_version"><title>有些库函数是相通的但有不同版本</title>
+	<para></para>
+	<para>比如：</para>
+	<itemizedlist>
+		<listitem>log日志的库
+			<itemizedlist>
+				<listitem>针对C语言的log4c：<link xl:href="http://www.crifan.com/under_ubuntu_use_arm_xscale_linux_gnueabi_gcc_cross_compile_log4c/">【记录】Ubuntu下用arm-xscale-linux-gnueabi交叉编译log4c</link></listitem>
+				<listitem>针对java语言的log4j：<link xl:href="http://www.crifan.com/android_try_use_android_logging_log4j_to_output_log_to_sd_card_file/">【记录】尝试用android-logging-log4j去实现log输出内容到sd卡中的文件的功能</link></listitem>
+				<listitem>针对go语言的log4g：<link xl:href="http://www.crifan.com/go_language_output_log_to_both_file_and_console_meantime_via_log4go">【记录】go语言中通过log4go实现同时输出log信息到log文件和console</link></listitem>
+			</itemizedlist>
+		</listitem>
+	</itemizedlist>
+	<para></para>
+</sect1>
+
+<sect1 xml:id="cli_vs_gui"><title>命令行界面（CLI==Command Line Interface） vs 图形界面（GUI==Graphical User Interface）</title>
+	<para>命令行界面，图形界面，是两种不同形式</para>
+	<para>两者的区别和联系是：</para>
+	<para>相同点：</para>
+	<para>对于很多事情，或者说实现很多功能，都可以既有命令行方式，也可以有图形界面方式。</para>
+	<para>只是，实现目的的方式，不太一样而已。</para>
+	<para>但往往底层所依赖的东西，内部实现的原理，是一致的。</para>
+	<itemizedlist>
+		<listitem>娱乐方面的例子
+			<para>假如是Linux类的Ubuntu系统，在电脑上去放一首歌听，则可以有：</para>
+			<itemizedlist>
+				<listitem>命令行方式：mplayer
+					<para>通过<link xl:href="http://wiki.ubuntu.com.cn/MPlayer">mplayer</link>的命令行方式去播放一首歌</para>
+					<para></para>
+				</listitem>
+				<listitem>图形界面方式：ExMplayer或Rhythmbox
+					<para>也可以通过图形界面，比如<link xl:href="http://ubuntuhandbook.org/index.php/2013/11/install-exmplayer-ubuntu-ppa/">ExMplayer</link></para>
+					<para>或那个Ubuntu自带的<link xl:href="http://www.howtogeek.com/howto/19043/how-to-make-ubuntu-play-mp3-files/">Rhythmbox</link></para>
+					<para>去播放，都是可以的。</para>
+					<para>而对应的图形界面的工具ExMplayer，其内部本身就是调用的是mplayer去播放歌曲的。</para>
+					<para>与此对应的Rhythmbox，倒不是基于mplayer的播放工具。</para>
+					<para>但是本质上，都是调用底层的系统所提供的声卡驱动，去将音频数据传递给声卡驱动，最终通过声卡去将歌曲的声音播放出来的。</para>
+				</listitem>
+			</itemizedlist>
+			<para></para>
+		</listitem>
+		<listitem>软件开发方面的例子
+			<para>比如之前介绍的Python的开发，有命令行方式，也是各种GUI工具，即IDE的方式</para>
+			<para>但是本质上，底层都是调用Python的解析器，去解析和执行Python程序的。</para>
+			<para>详见：<link xl:href="http://www.crifan.com/files/doc/docbook/python_beginner_tutorial/release/htmls/ch04_python_dev_env.html#python_ide_relation_with_windows_cmd">Python的IDE和Python代码编辑器，Windows的cmd，等的关系</link></para>
+		</listitem>
+	</itemizedlist>
+	<para></para>
+</sect1>
+
+<sect1 xml:id="soft_release"><title>软件发布领域内通用概念</title>
+	<para>软件发布领域内的常见的概念和名词：</para>
+
+	<sect2 xml:id="version_numbering_rule"><title>版本号命名规则</title>
+		<para>在我们进行计算机领域内的开发时，往往会涉及到某个软件、硬件、某个源代码文件等等的版本号的命名。</para>
+		<para>这些版本号的命名，原先并没有什么规律。但是随着系统的复杂，就需要一个行之有效的，版本号的命名的规则。</para>
+		<para>然后就诞生了，对应的，多数人都采纳的一种版本号的命名的规则。</para>
+		<para></para>
+		<para>TODO：将<link xl:href="http://segmentfault.com/q/1010000000317198">请问python2.7.x各个版本之间的差异</link>的回复中提到的：<link xl:href="http://semver.org/">语义化版本号</link>整理过来。</para>
+		<para></para>
+		<para></para>
+	</sect2>
+
+	<sect2 xml:id="nightly"><title>nightly夜晚编译</title>
+		<para>nightly，每天晚上编译一次，编译出来一个可以工作的版本</para>
+		<para>这个是软件开发过程中的，软件发布的一种方式。</para>
+		<para>这样每天一个新版本，每个版本都包含了最新的功能，但是相对于正式发布的版本，可能存在一定的bug缺陷，但是不妨碍想要尝新的用户去试用。</para>
+		<para>http://www.worldhello.net/doc/nightlybuild/ar01s01s01.html</para>
+		<para>也有提及该概念。</para>
+	</sect2>
+	
+	<sect2 xml:id="release_candidate"><title>RC==release candidate</title>
+		<para>软件正式发布之前，往往会其他几个版本，比如RC版本等等。</para>
+		<para>对应的RC的意思是：</para>
+		<blockquote>
+			<para>Release Candidate（简称RC）指可能成为最终产品的候选版本，如果未出现问题则可发布成为正式版本。</para>
+			<para>在此阶段的产品通常包含所有功能、或接近完整，亦不会出现严重问题。</para>
+			<para>多数开源软件会推出两个RC版本，最后的RC2则成为正式版本。</para>
+			<para>闭源软件较少公开使用，微软公司在Windows 7上应用此名称。</para>
+			<para>苹果公司把在这阶段的产品称为“Golden Master”（简称GM），而最后的GM即成为正式版本。</para>
+		</blockquote>
+		<para>不同时期的版本的叫法分别是：</para>
+		<itemizedlist>
+			<listitem>Pre-alpha</listitem>
+			<listitem>Alpha</listitem>
+			<listitem>Beta</listitem>
+			<listitem>RC1</listitem>
+			<listitem>RC2</listitem>
+			<listitem>RTM</listitem>
+			<listitem>Stable</listitem>
+		</itemizedlist>
+		<para></para>
+		<para></para>
+		<para>举例：</para>
+		<para><link xl:href="http://www.python.org/" />中就有提到RC：</para>
+		<blockquote>
+			<para>Python 3.3.4 release candidate has been released</para>
+			<para>The first rc for Python 3.3.4, Python 3.3.4rc1, has been released.</para>
+		</blockquote>
+		<para></para>
+	</sect2>
+</sect1>
+
+<sect1 xml:id="ide"><title>软件开发中的IDE</title>
+	<para>在软件开发领域内，随着经验积累你会发现，在不同计算机语言进行开发期间，都会遇到各种不同的IDE。以及：</para>
+
+	<sect2 xml:id="ide_common_function"><title>IDE中的通用功能</title>
+		<para>比如调试功能，调用堆栈，变量值等等。</para>
+		<para>比如：</para>
+		<itemizedlist>
+			<listitem>Python的IDE：PyScripter
+				<para>Python的IDE：PyScripter中，就也支持调试相关的功能。</para>
+				<figure xml:id="fg.python_ide_pyscripter_breakpoints"><title>Python的IDE：PyScripter中的Breakpoints</title>
+					<mediaobject>
+						<imageobject role="html"><imagedata fileref="images/python_ide_pyscripter_breakpoints.png" align="left"   scalefit="0" width="100%"/></imageobject>
+						<imageobject role="fo">  <imagedata fileref="images/python_ide_pyscripter_breakpoints.png" align="center" scalefit="0" width="100%"/></imageobject>
+					</mediaobject>
+				</figure>
+				<para>包括：</para>
+				<itemizedlist>
+					<listitem>Call Stack</listitem>
+					<listitem>Variables</listitem>
+					<listitem>Watches</listitem>
+					<listitem>Breakpoints</listitem>
+				</itemizedlist>
+				<para>等等</para>
+				<para></para>
+			</listitem>
+		</itemizedlist>
+		<para></para>
+		<para></para>
+		<para>TODO：将<link xl:href="http://segmentfault.com/q/1010000000317198">请问python2.7.x各个版本之间的差异</link>的回复中提到的：<link xl:href="http://semver.org/">语义化版本号</link>整理过来。</para>
+		<para></para>
+		<para></para>
+	</sect2>
+
+	<sect2 xml:id="ide_vs"><title>常见IDE：VS(Visual Studio)</title>
+		<para>TOOD：整理VS（Visual Studio）中的各种调试功能。</para>
+		<para></para>
+	</sect2>
+	
+	<sect2 xml:id="ide_eclipse"><title>常见IDE：Eclipse</title>
+		<para>TODO：整理Eclipse中的调试功能。</para>
+		<para>以及基于Eclipse的ADT中的，同样的调试功能</para>
+	</sect2>
+
+	<sect2 xml:id="ide_intellij_idea"><title>常见IDE：IntelliJ IDEA</title>
+		<para>TODO：IntelliJ IDEA中的功能。</para>
+		<para></para>
+		<para></para>
+		<para></para>
+	</sect2>
+
+</sect1>
+
+
+</chapter>

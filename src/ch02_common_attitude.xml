@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding="utf-8"?>
+
+<!DOCTYPE chapter
+[
+
+<!ENTITY % crl_ent PUBLIC "crl.ent" 'http://www.crifan.com/files/res/docbook/entity/crl.ent'>
+%crl_ent;
+
+]>
+<chapter
+    xmlns="http://docbook.org/ns/docbook"
+    xmlns:xl="http://www.w3.org/1999/xlink"
+    xmlns:xi="http://www.w3.org/2001/XInclude"
+    xmlns:mathml="http://www.w3.org/1998/Math/MathML"
+    xmlns:xhtml="http://www.w3.org/1999/xhtml"
+    xmlns:svg="http://www.w3.org/2000/svg"
+
+	xml:id="ch02_common_attitude">
+<title>通用软件开发之态度和想法</title>
+<abstract></abstract>
+
+<para></para>
+<para>此处整理一些，软件开发期间，会遇到和用到的，通用的思想，想法，做事情的态度，方式。</para>
+<para>目的是，更加高效的，去搞开发，搞软件开发。</para>
+
+<sect1 xml:id="style_clear_idea"><title>软件开发风格之思路清晰有条理</title>
+    <para>很多时候，做软件开发，和做其他事情，道理都是相同的：</para>
+    <para>即使是临时文件，也要清晰的命名，避免后续可能的，潜在的错误发生，并且还可以帮助我们快速分析，调试出现的错误。</para>
+    <para>或者是快速恢复思路：自己之前做过的开发，即使过了相对较长的时间之后，比如3,5天，3,5个月，甚至3，5年，自己回头再看自己的软件或代码，仍旧可以看懂，并且明白自己当时的意图。</para>
+    <para></para>
+    <para>举例：</para>
+    <para>之前看到这个<link xl:href="http://bbs.chinaunix.net/thread-4099920-1-1.html">新手玩python偶遇坑爹错误，求开导</link></para>
+    <para>中的我的回复：</para>
+    <para>不论错误的原因是否是由于测试文件名和模块同名。但是这样的做事情的方式，都是偷懒的做法，不好的做法，都属于很不好的习惯。</para>
+    <para></para>
+    <para>而针对该特定问题：其由于第一次，刚开始就没有给临时文件一个清晰的名字，而导致了后续的问题。</para>
+    <para>而正常的思路，好的做法，应该是：</para>
+    <para>去测试该requests模块，需要写个测试文件，目的是用来测试此模块，</para>
+    <para>那么该测试文件的命名，就不应该很随意的、轻易的去起个无意义的名字，比如：</para>
+	<itemizedlist>
+		<listitem><filename>a.py</filename>或<filename>abc.py</filename></listitem>
+		<listitem><filename>1.py</filename>或<filename>123.py</filename></listitem>
+		<listitem><filename>test.py</filename>或<filename>demo.py</filename></listitem>
+	</itemizedlist>
+    <para>而是应该要保持思路清晰，起个<emphasis>见名知意</emphasis>的名字，比如：</para>
+	<itemizedlist>
+		<listitem><filename>requestsDemo.py</filename>或<filename>requests_demo.py</filename></listitem>
+		<listitem><filename>requestsTest.py</filename>或<filename>requests_test.py</filename></listitem>
+	</itemizedlist>
+    <para>如此，才可以达到写代码的目的：</para>
+	<itemizedlist>
+		<listitem>不论是，别人看你的文件名，看你的代码</listitem>
+		<listitem>还是，过了很长时间之后，你回来看你自己的代码</listitem>
+	</itemizedlist>
+    <para>都可以快速的看懂你所写的代码，能读懂你的每个文件所要实现的功能。</para>
+    <para>否则就很容易变成，很多人所遇到的情况：</para>
+	<itemizedlist>
+		<listitem>不论是，自己写完代码，没过多长时间</listitem>
+		<listitem>还是，别人过来看你的代码</listitem>
+	</itemizedlist>
+    <para>都是：</para>
+	<itemizedlist>
+		<listitem>单独看文件名，不知道该文件的作用</listitem>
+		<listitem>再去看代码，也是逻辑不够清晰，逻辑混乱，无法快速准确的明白你的代码的含义，所要实现是什么功能</listitem>
+	</itemizedlist>
+    <para>如此：</para>
+    <para>就变成了典型的：</para>
+	<itemizedlist>
+		<listitem>坏的软件开发的习惯</listitem>
+		<listitem>坏的写代码的风格</listitem>
+	</itemizedlist>
+    <para>这就和之前的软件开发的重中之重的要注意的那一点<emphasis>写代码是给别人看的</emphasis>所冲突了。</para>
+    <para></para>
+    <para>看到这里，估计有人会问：</para>
+    <para>不就是简单的给测试文件命个名，写点测试代码吗？</para>
+    <para>又不是真正的去搞软件开发，写详细实现功能的代码，用得着这么严谨，甚至说死板吗？</para>
+    <para>对此，我的回答是：需要这么严谨。</para>
+    <para>因为：</para>
+	<itemizedlist>
+		<listitem>第一次就做对的事情
+			<para>把这个问题，上升到做事情的态度来看，那么你需要明白一个做事情原则中，很重要的一条：第一次，就做对的事情</para>
+			<para>因为，如果第一次就马虎，尤其而带来的以后的潜在的错误，以及解决该问题的错误所需要花费的精力和成本，</para>
+			<para>远大于你为了第一次做对的事情，仅仅比你随意的就下手做了，而多思考了几秒，几十秒，甚至几十分钟</para>
+			<para>这个逻辑，也非常类似于：</para>
+			<para>解决软件的bug的时间，永远是越早越好，最好是想办法找到合理的机制去预防软件的bug。</para>
+			<para>因为随着时间往后推移，软件的bug所导致的问题会越严重。</para>
+			<para></para>
+		</listitem>
+		<listitem>只有好的习惯，才会产生更好的结果
+			<para>只有严谨的，认真的态度，养成好的习惯，才能从好的习惯中获益：减少后续发生问题的概率</para>
+			<para>最终实现我们的终极目的：更加高效的做事情，更加高效的搞软件开发。</para>
+			<para>而高质量的软件，和低质量的差距，也就是从第一天的做事情、搞软件开发的态度上，就决定了。</para>
+		</listitem>
+	</itemizedlist>
+    <para></para>
+    <para></para>
+</sect1>
+
+<sect1 xml:id="soft_dev_efficiency_cost_buy"><title>软件开发的效率、成本和投资</title>
+    <para>在<link xl:href="http://zh.wikipedia.org/wiki/%E8%84%9A%E6%9C%AC%E8%AF%AD%E8%A8%80" />中看到的：</para>
+    <para>在很多案例中，如编写一些数十行的小脚本，它所带来的编写优势就远远超过了运行时的劣势，尤其是在当前程序员工资趋高和硬件成本趋低时。</para>
+    <para>由此想到：</para>
+	<itemizedlist>
+		<listitem>计算机发展初期：硬件成本高，软件成本低：程序员工资相对硬件成本要低</listitem>
+		<listitem>计算法发展到现在：硬件成本相对很低，软件成本相对较高：程序员工资相对来说要比硬件要高</listitem>
+	</itemizedlist>
+    <para>所以为了提升软件开发效率，不论是公司还是个人，都要舍得适当的投资：</para>
+	<itemizedlist>
+		<listitem>买配置好的电脑，方便软件开发
+			<para>不论是公司还是个人，都是要舍得在升级电脑硬件配置方面舍得投入</para>
+			<para>当然前提是，升级了配置，对于软件开发的速度，效率方面有所提升</para>
+			<para>此种情况，往往是在发生了，电脑硬件配置不够用，比如Windows下跑Linux的虚拟机，编译项目代码占用资源较高</para>
+			<para>此时才考虑，是否值得花钱，升级内存，还是把机械硬盘换成SSD硬盘，甚至是购买新电脑</para>
+			<para>由此，保证硬件资源够用，方便软件开发，不会把多余的时间和精力消耗在低硬件配置无法解决软件方面的高性能的要求上。</para>
+			<para>关于SSD固态硬盘，对于电脑性能的提升，的确很大，不了解的，可以参考：</para>
+			<para>TODO：添加换了SSD硬盘后电脑性能提升对比的帖子</para>
+		</listitem>
+		<listitem>为了更方便的利用google等国外网站资源而购买翻墙方面的服务
+			<para>搞软件开发，往往是国外的资源更有参考价值</para>
+			<para>而如何找到这类国外资源，往往需要利用google</para>
+			<para>而google被封，被墙，导致基本无法使用</para>
+			<para>想要方便的，稳定的用google，及查看其它国外技术资料，往往就需要翻墙</para>
+			<para>而目前免费的可以翻墙的资源，往往效果不够好</para>
+			<para>所以，在能接受的前提下，可以购买翻墙方面的服务，比如VPN，Shadowsocks等等服务。</para>
+			<para>比如我放弃了GoAgent，而花钱99元买了一年的shadowsocks，使得可以稳定高效的翻墙用google。</para>
+			<para>TOOD：添加购买shadowsocks的帖子。</para>
+			<para></para>
+		</listitem>
+		<listitem>为了方便开发而买必要的有价值的软件
+			<para>比如搞特定领域的软件开发，而需要一些工具类的软件。</para>
+			<para>为了支持国内外的精品软件，在可以支付的起的情况下，可以考虑购买正版软件，而不要一直都用盗版。</para>
+			<para>比如我觉得一些做的好的软件有，Source Insight，Beyond Compare等等。</para>
+			<para>其他值得推荐的，详见：<link xl:href="http://www.crifan.com/files/doc/docbook/crifan_rec_soft/release/html/crifan_rec_soft.html">crifan推荐软件</link></para>
+		</listitem>
+	</itemizedlist>
+    <para></para>
+</sect1>
+
+</chapter>

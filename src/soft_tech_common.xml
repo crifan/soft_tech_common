@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding="utf-8"?>
+
+<!DOCTYPE book
+[
+
+<!ENTITY cur_book_name      "soft_tech_common" >
+<!ENTITY publish_date       "2015-05-22" >
+<!ENTITY release_version    "1.3" >
+
+<!ENTITY copyrith_year "2015" >
+<!ENTITY entity_common_multi_format     SYSTEM  "../../entity_common_multi_format.xml">
+<!ENTITY entity_common_publish_info     SYSTEM  "../../entity_common_publish_info.xml">
+]>
+
+<book version="5.0"
+    xmlns="http://docbook.org/ns/docbook"
+    xmlns:xi="http://www.w3.org/2001/XInclude"
+    xmlns:xl="http://www.w3.org/1999/xlink"
+    
+    xml:lang="zh_CN"
+    >
+<info>
+    <title>软件技术开发通用知识</title>
+    <subtitle></subtitle>
+    <keywordset>
+        <keyword>软件技术</keyword>
+        <keyword>开发</keyword>
+        <keyword>通用知识</keyword>
+        <keyword>通用概念</keyword>
+    </keywordset>
+    
+    <abstract>
+        <para>本文主要介绍了软件技术领域内，做软件开发期间，常见的，通用的，共同的，一些知识。</para>
+        &entity_common_multi_format;
+    </abstract>
+
+    <revhistory>
+        <revision>
+            <revnumber>&release_version;</revnumber>
+            <date>&publish_date;</date>
+            <revremark>
+                <orderedlist>
+                    <listitem>添加技术框架的Host和Device</listitem>
+                    <listitem>添加技术中的HS是高速的意思</listitem>
+                    <listitem>profile某种领域的协议和技术</listitem>
+                    <listitem>技术说明Technical Notes，Image镜像，前提条件和辅助条件</listitem>
+                    <listitem>添加了协议栈介绍</listitem>
+                    <listitem>添加了通用的做事情的想法，方法</listitem>
+                    <listitem>添加CLI和GUI</listitem>
+                    <listitem>添加portfolio</listitem>
+                    <listitem>添加协议分析工具</listitem>
+                </orderedlist>
+            </revremark>
+            <authorinitials>crl</authorinitials>
+        </revision>
+    </revhistory>
+
+    &entity_common_publish_info;
+</info>
+
+<xi:include href="preface.xml" />
+<xi:include href="ch01_common_item.xml" />
+<xi:include href="ch02_common_attitude.xml" />
+<xi:include href="ch03_common_method.xml" />
+<xi:include href="reference.xml" />
+
+</book>

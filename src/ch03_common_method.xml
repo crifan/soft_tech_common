@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding="utf-8"?>
+
+<!DOCTYPE chapter
+[
+
+<!ENTITY % crl_ent PUBLIC "crl.ent" 'http://www.crifan.com/files/res/docbook/entity/crl.ent'>
+%crl_ent;
+
+]>
+<chapter
+    xmlns="http://docbook.org/ns/docbook"
+    xmlns:xl="http://www.w3.org/1999/xlink"
+    xmlns:xi="http://www.w3.org/2001/XInclude"
+    xmlns:mathml="http://www.w3.org/1998/Math/MathML"
+    xmlns:xhtml="http://www.w3.org/1999/xhtml"
+    xmlns:svg="http://www.w3.org/2000/svg"
+
+	xml:id="ch03_common_method">
+<title>通用软件开发之方法</title>
+<abstract></abstract>
+
+<para></para>
+<para>此处整理一些，软件开发期间，所涉及到的，通用的学习方法。</para>
+
+<sect1 xml:id="utilize_internet"><title>软件开发方法之充分利用互联网资源</title>
+    <para>尤其是，在查技术资料时，利用好谷歌（google），而不是百度。</para>
+    <para>当然，还有stackoverflow，维基百科（wikipedia）等有价值的网站。</para>
+    <para>TODO：把之前写的，以某些技术点为例，说明如何利用google去搜资料的过程整理过来。</para>
+</sect1>
+
+<sect1 xml:id="learn_some_tech_point"><title>软件开发方法之如何学习某个技术点</title>
+    <para>对于在软件开发期间，学习某个，你之前不懂，听都没听过的，技术点的时候，这时候，往往最有用的网络资源是：维基百科</para>
+    <para>TODO：整理之前在学习某个技术点，如何利用wiki去搞懂概念，并搞懂该技术点，在技术体系中的位置，以便于更清楚技术点的所属层次，的过程。</para>
+    <para></para>
+</sect1>
+
+
+</chapter>

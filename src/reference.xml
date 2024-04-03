@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding="utf-8"?>
+
+<bibliography
+    xmlns="http://docbook.org/ns/docbook"
+    xmlns:xl="http://www.w3.org/1999/xlink"
+    xmlns:xi="http://www.w3.org/2001/XInclude"
+    xmlns:mathml="http://www.w3.org/1998/Math/MathML"
+    xmlns:xhtml="http://www.w3.org/1999/xhtml"
+    xmlns:svg="http://www.w3.org/2000/svg"
+    xmlns:ns="http://docbook.org/ns/docbook"
+
+    xml:id="reference">
+
+<bibliomixed id="ref.usb_basic_host">
+  <bibliosource><link xl:href="http://www.crifan.com/files/doc/docbook/usb_basic/release/html/usb_basic.html#core_is_host">USB基础知识概论 - USB系统的核心是Host</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+<bibliomixed id="ref.summry_profinet_tech">
+  <bibliosource><link xl:href="http://www.crifan.com/summary_filedbus_profinet_overview/">【整理】现场总线技术：PROFINET | 在路上</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+<bibliomixed id="ref.bt_intro">
+  <bibliosource><link xl:href="http://www.crifan.com/files/doc/docbook/bluetooth_intro/release/html/bluetooth_intro.html">蓝牙协议详解</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+<bibliomixed id="ref.wiki_profinet">
+  <bibliosource><link xl:href="http://en.wikipedia.org/wiki/PROFINET">PROFINET - Wikipedia, the free encyclopedia</link></bibliosource>
+  <author>wkipedia</author>
+</bibliomixed>
+
+<bibliomixed id="ref.html4_html5_xhtml">
+  <bibliosource><link xl:href="http://www.zhihu.com/question/19818208">HTML4，HTML5，XHTML 之间有什么区别？</link></bibliosource>
+  <author>知乎</author>
+</bibliomixed>
+
+<bibliomixed id="ref.python_2_7_x_diff">
+  <bibliosource><link xl:href="http://segmentfault.com/q/1010000000317198">请问python2.7.x各个版本之间的差异</link></bibliosource>
+  <author>segmentfault</author>
+</bibliomixed>
+
+<bibliomixed id="ref.newbee_try_python_error">
+  <bibliosource><link xl:href="http://bbs.chinaunix.net/thread-4099920-1-1.html">新手玩python偶遇坑爹错误，求开导</link></bibliosource>
+  <author>chinaunix</author>
+</bibliomixed>
+
+<bibliomixed id="ref.wiki_soft_version_lifecycle">
+  <bibliosource><link xl:href="http://zh.wikipedia.org/zh-cn/%E8%BB%9F%E4%BB%B6%E7%89%88%E6%9C%AC%E9%80%B1%E6%9C%9F">软件版本周期 - 维基百科，自由的百科全书</link></bibliosource>
+  <author>wiki</author>
+</bibliomixed>
+
+<bibliomixed id="ref.ubuntu_wiki_mplayer">
+  <bibliosource><link xl:href="http://wiki.ubuntu.com.cn/MPlayer">mplayer</link></bibliosource>
+  <author>ubuntu</author>
+</bibliomixed>
+
+<bibliomixed id="ref.install_exmplayer_ubuntu_ppa">
+  <bibliosource><link xl:href="http://ubuntuhandbook.org/index.php/2013/11/install-exmplayer-ubuntu-ppa/">ExMplayer</link></bibliosource>
+  <author>ubuntu</author>
+</bibliomixed>
+
+<bibliomixed id="ref.ubuntu_rhythmbox">
+  <bibliosource><link xl:href="http://www.howtogeek.com/howto/19043/how-to-make-ubuntu-play-mp3-files/">Rhythmbox</link></bibliosource>
+  <author>howtogeek</author>
+</bibliomixed>
+
+<bibliomixed id="ref.bluetooth_protocol_arch">
+  <bibliosource><link xl:href="http://www.crifan.com/files/doc/docbook/bluetooth_intro/release/html/bluetooth_intro.html#ch02_bt_arch_profile">蓝牙协议的架构</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+<bibliomixed id="ref.usb_protocol_overview">
+  <bibliosource><link xl:href="http://www.crifan.com/files/doc/docbook/soft_tech_common/release/html/soft_tech_common.html#ch03_protocol_overview">USB协议概览</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+<bibliomixed id="ref.python_ide_windows_cmd_relation">
+  <bibliosource><link xl:href="http://www.crifan.com/files/doc/docbook/python_beginner_tutorial/release/htmls/ch04_python_dev_env.html#python_ide_relation_with_windows_cmd">Python的IDE和Python代码编辑器，Windows的cmd，等的关系</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+</bibliography>
